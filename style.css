@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    width: 320px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 16px;
+    padding: 16px 8px;
+}
+
+.img-container{
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsl(215, 51%, 70%);
+    border-radius: 16px;
+}
+
+.img-container:hover .overlay{
+    opacity: 0.7;
+}
+
+.overlay-icon {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+  }
+
+.img-container img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.details{
+    padding: 0px 8px;
+}
+
+.details h3{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+.details h3:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.details p{
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth{
+    color:  hsl(178, 100%, 50%);
+}
+
+.time{
+    color: hsl(215, 51%, 70%);
+}
+
+hr.solid{
+    border: none;
+    border-top: 1px solid hsl(215, 51%, 70%);
+    margin-top: 10px;
+}
+
+.creation{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    /* justify-content: space-around; */
+}
+
+.creation img{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.creation small{
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+}
+
+small span{
+    color: hsl(0, 0%, 100%);
+}
+
+small span:hover{
+    color: hsl(178, 100%, 50%);
+}
