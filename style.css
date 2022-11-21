@@ -13,7 +13,7 @@ body{
     width: 320px;
     background-color: hsl(216, 50%, 16%);
     border-radius: 16px;
-    padding: 16px 8px;
+    padding: 8px 8px;
 }
 
 .img-container{
@@ -61,6 +61,7 @@ body{
 
 .details{
     padding: 0px 8px;
+    margin-top: 10px;
 }
 
 .details h3{
